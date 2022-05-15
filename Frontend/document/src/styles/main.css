@@ -1,0 +1,18 @@
+
+.home-page { 
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  background-color: rgba(20, 168, 148, 0.664);
+  height: 100vh;
+  width: 30vw;
+}
+
+.right-section {
+  background-color: rgba(106, 63, 223, 0.575);
+  height: 100vh;
+  width: 70vw;
+}
+

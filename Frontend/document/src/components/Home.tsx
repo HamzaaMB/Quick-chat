@@ -3,7 +3,14 @@ import React from 'react';
 
 const Home = () => {
 
-  return <h1>HomePage</h1>
+  return (
+  <>
+    <section className="home-page">
+      <div className="left-section"></div>
+      <div className="right-section"></div>
+    </section>
+</>
+  )
 }
 
 export default Home
