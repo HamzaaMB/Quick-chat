@@ -1,18 +1,35 @@
 
-.home-page { 
+body {
+  height: 100%;
+  border: 1px solid black;
+  
+}
+
+/*Home Page*/
+
+.main-page {
+  height: 90vh;
+  width: 80vw;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.home-page {
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
 
 .left-section {
-  background-color: rgba(20, 168, 148, 0.664);
-  height: 100vh;
-  width: 30vw;
+  height: 100%;
+  width: 30%;
+  background-color: green;
 }
 
-.right-section {
-  background-color: rgba(106, 63, 223, 0.575);
-  height: 100vh;
-  width: 70vw;
-}
+.right-section { 
+  height: 100%;
+  width: 70%;
+  background-color:purple;
 
+
+}
