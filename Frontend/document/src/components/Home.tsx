@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ConvoBanner from './ConvoBanner';
 import Profile from './Profile'
 
 
@@ -9,10 +10,14 @@ const Home = () => {
 
       <section className="main-page">
         <div className="home-page">
-          <div className="left-section">
-            <Profile />
+          <div className="left-section-container">
+            <div className="left-section">
+              <Profile />
+              <ConvoBanner />
+            </div>
           </div>
           <div className="right-section">
+
           </div>
         </div>
       </section>
