@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 
 const ConvoBanner = () => {
 
-  let [popupTest, setPopupTest] = useState(true)
-  let [stringName, setStringName] = useState('chat-popup-unread')
+  let [renderChat, setrenderChat] = useState(true)
+  let [messageStatus, setMessageStatus] = useState('chat-popup-unread')
   let [messages, setMessages] = useState({
     name: "Hamza",
     message: "Hello, how are you doing?"
@@ -15,15 +15,16 @@ const ConvoBanner = () => {
 
 
   const handleOnClick = (event: any) => {
-    // setPopupTest(!popupTest)
-    setStringName('chat-popup-read')
+    setrenderChat(renderChat)
+    if (renderChat) setMessageStatus('chat-popup-read')
+    
   }
- 
+
   return (
     <div className="convo-section">
-      { popupTest &&
+      {renderChat &&
         <div
-          className={stringName}
+          className={messageStatus}
           onClick={handleOnClick}
         >
           <div className="chat-name">
@@ -35,7 +36,6 @@ const ConvoBanner = () => {
         </div>
       }
     </div>
-
   )
 
 }
