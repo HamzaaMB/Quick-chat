@@ -18,7 +18,7 @@ const ConvoBanner = () => {
     // setPopupTest(!popupTest)
     setStringName('chat-popup-read')
   }
-
+ 
   return (
     <div className="convo-section">
       { popupTest &&
