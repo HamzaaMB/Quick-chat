@@ -46,3 +46,19 @@ body {
     border: 1px solid black;
     height: 10%;
   }
+
+
+  /*Chat Popup*/
+
+  .chat-popup-unread {
+    border: 1px solid black;
+  }
+
+  .chat-popup-unread:hover {
+    cursor: pointer;
+    background:rgb(223, 158, 74)
+  }
+
+  .chat-popup-read {
+    background-color: red;
+  }
