@@ -43,7 +43,7 @@ const Home = () => {
             </div>
           </div>
           <div className="right-section">
-            {renderConversation && <Conversation />
+            {renderConversation ? <Conversation /> : <h1>Select a conversation</h1>
             }
           </div>
         </div>
