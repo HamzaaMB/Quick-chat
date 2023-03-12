@@ -7,11 +7,9 @@ import Stack from '@mui/material/Stack';
 
 const Conversation = () => {
 
-  // let [renderConvo, setRenderConvo] = useState(false)
 
   return (
     <>
-      {/* {renderConvo &&  */}
       <div className="right-convo-section">
         <div className="convo-name-holder">
           <div className="avatar-holder">
@@ -42,7 +40,6 @@ const Conversation = () => {
           </div>
         </div>
       </div>
-      {/* } */}
     </>
   )
 
