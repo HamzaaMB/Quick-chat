@@ -17,11 +17,10 @@ const ConvoBanner = () => {
   const handleOnClick = (event: any) => {
     setrenderChat(renderChat)
     if (renderChat) setMessageStatus('chat-popup-read')
-    
   }
 
   return (
-    <div className="convo-section">
+    <div className="left-convo-section">
       {renderChat &&
         <div
           className={messageStatus}
@@ -37,7 +36,6 @@ const ConvoBanner = () => {
       }
     </div>
   )
-
 }
 
 

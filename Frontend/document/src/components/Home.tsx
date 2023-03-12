@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Conversation from './Conversation';
 import ConvoBanner from './ConvoBanner';
 import Profile from './Profile'
 
@@ -17,7 +18,7 @@ const Home = () => {
             </div>
           </div>
           <div className="right-section">
-
+            <Conversation />
           </div>
         </div>
       </section>
