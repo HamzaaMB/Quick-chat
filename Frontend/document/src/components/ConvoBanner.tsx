@@ -1,27 +1,25 @@
 import React, { useState } from 'react'
-
+import Conversation from './Conversation'
 
 const ConvoBanner = () => {
 
-  let [renderChat, setrenderChat] = useState(true)
   let [messageStatus, setMessageStatus] = useState('chat-popup-unread')
   let [messages, setMessages] = useState({
     name: "Hamza",
     message: "Hello, how are you doing?"
   })
-
-  /*currently not used, will be used when useEffect comes in.*/
-  // let [popUp, setpopUp] = useState(true)
+  let [renderConversation, setRenderConversation] = useState(false)
 
 
   const handleOnClick = (event: any) => {
-    setrenderChat(renderChat)
-    if (renderChat) setMessageStatus('chat-popup-read')
+    setMessageStatus('chat-popup-read')
+    setRenderConversation(!renderConversation)
+    if (!renderConversation) setMessageStatus('chat-popup-unread')
   }
 
   return (
-    <div className="left-convo-section">
-      {renderChat &&
+    <>
+      <div className="left-convo-section">
         <div
           className={messageStatus}
           onClick={handleOnClick}
@@ -33,9 +31,10 @@ const ConvoBanner = () => {
             {messages.message}
           </div>
         </div>
-      }
-    </div>
+      </div>
+    </>
   )
+
 }
 
 
