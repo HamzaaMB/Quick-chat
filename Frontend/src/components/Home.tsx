@@ -4,11 +4,18 @@ import Profile from './Profile'
 
 
 const Home = () => {
-
+  /*Changes css class from 'unread' to 'read' upon clicking the message in the left panel*/
   let [messageStatus, setMessageStatus] = useState('chat-popup-unread')
+
+  /*Endpoint required for messages*/
   let [messages, setMessages] = useState({
     name: "Hamza",
-    message: "Hello, how are you doing?"
+    message: "Bonjour, comment ca va?"
+  })
+
+  let [messagesTwo, setMessagesTwo] = useState({
+    name: "Issra",
+    message: "Bonjour, ca va! Et toi?"
   })
 
   let [renderConversation, setRenderConversation] = useState(false)
@@ -43,7 +50,7 @@ const Home = () => {
             </div>
           </div>
           <div className="right-section">
-            {renderConversation ? <Conversation message={messages} /> : <h1>Select a conversation</h1>
+            {renderConversation ? <Conversation dataTwo ={messagesTwo} data={messages} /> : <h1>Select a conversation</h1>
             }
           </div>
         </div>

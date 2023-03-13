@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 
 
 
-const Conversation = (props: any) => {
+const Conversation = (data: any) => {
+
+  console.log('props', data)
 
 
-  console.log('props', props)
   return (
     <>
       <div className="right-convo-section">
@@ -24,16 +25,15 @@ const Conversation = (props: any) => {
         </div>
         <div className="convo-detail-holder">
           <div className="convo-bubble-container">
-              <p className="left-bubble">
-                {props.message.message}
-              </p>
-              <p className="right-bubble">
-                Hi
-              </p>
+            <p className="left-bubble">
+              {data.data.message}
+            </p>
+            <p className="right-bubble">
+              {data.dataTwo.message}
+            </p>
           </div>
           <div className="convo-input-container">
-            <input className="message-input" type="text">
-            </input>
+            <input className="message-input" type="text"></input>
           </div>
         </div>
       </div>
