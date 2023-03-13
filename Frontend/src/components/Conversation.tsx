@@ -5,9 +5,10 @@ import Stack from '@mui/material/Stack';
 
 
 
-const Conversation = () => {
+const Conversation = (props: any) => {
 
 
+  console.log('props', props)
   return (
     <>
       <div className="right-convo-section">
@@ -23,16 +24,12 @@ const Conversation = () => {
         </div>
         <div className="convo-detail-holder">
           <div className="convo-bubble-container">
-            <div className="left-convo-bubble">
               <p className="left-bubble">
-                Hello
+                {props.message.message}
               </p>
-            </div>
-            <div className="right-convo-bubble">
               <p className="right-bubble">
                 Hi
               </p>
-            </div>
           </div>
           <div className="convo-input-container">
             <input className="message-input" type="text">
@@ -42,8 +39,6 @@ const Conversation = () => {
       </div>
     </>
   )
-
-
 }
 
 export default Conversation

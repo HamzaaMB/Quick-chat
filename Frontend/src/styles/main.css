@@ -103,10 +103,17 @@
 
   .left-convo-bubble,
   .right-convo-bubble {
-    width: 50%;
+    width: 100%;
     border: 1px solid red;
     display: flex;
+  }
+
+  .left-convo-bubble {
     align-items: flex-end;
+  }
+
+  .right-convo-bubble {
+    align-items: flex-start;
   }
 
   .left-bubble,
