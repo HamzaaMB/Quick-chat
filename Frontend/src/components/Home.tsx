@@ -8,15 +8,27 @@ const Home = () => {
   let [messageStatus, setMessageStatus] = useState('chat-popup-unread')
 
   /*Endpoint required for messages*/
-  let [messages, setMessages] = useState({
+  let [messages, setMessages] = useState([
+    {
     name: "Hamza",
     message: "Bonjour, comment ca va?"
-  })
+    },
+  {
+    name: "Hamza",
+    message: "Bonjour, comment ca va?"
+  }
+  ])
 
-  let [messagesTwo, setMessagesTwo] = useState({
+  let [messagesTwo, setMessagesTwo] = useState([
+    {
     name: "Issra",
     message: "Bonjour, ca va! Et toi?"
-  })
+    },
+    {
+    name: "Issra",
+    message: "Bonjour, ca va! Et toi?"
+    }
+])
 
   let [renderConversation, setRenderConversation] = useState(false)
 
@@ -40,10 +52,10 @@ const Home = () => {
                   onClick={handleOnClick}
                 >
                   <div className="chat-name">
-                    {messages.name}
+                    {messages[0].name}
                   </div>
                   <div className="chat-message">
-                    {messages.message}
+                    {messages[0].message}
                   </div>
                 </div>
               </div>
