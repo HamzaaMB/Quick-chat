@@ -27,11 +27,19 @@ const Conversation = (data: any) => {
           <div className="convo-bubble-container">
             {
               data.data.map((x: any) => {
-                return <p className="message-bubble">{x.message}</p>
+                return <p className="message-bubble">
+                    <p className="left-conversation-bubble">
+                      {x.message}
+                    </p>
+                </p>
               })}
             {
               data.dataTwo.map((x: any) => {
-                return <p className="message-bubble">{x.message}</p>
+                return <p className="message-bubble">
+                    <p className="left-conversation-bubble">
+                      {x.message}
+                    </p>
+                  </p>
               })}
           </div>
           <div className="convo-input-container">
