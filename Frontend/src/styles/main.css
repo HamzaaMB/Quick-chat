@@ -101,24 +101,30 @@
     height: 40%;
   }
 
-  .left-convo-bubble,
+  /* .left-convo-bubble,
   .right-convo-bubble {
     width: 100%;
     border: 1px solid red;
     display: flex;
-  }
+  } */
 
-  .left-convo-bubble {
+  /* .left-convo-bubble {
     align-items: flex-end;
   }
 
   .right-convo-bubble {
     align-items: flex-start;
-  }
+  } */
 
-  .left-bubble,
+  /* .left-bubble,
   .right-bubble {
     height: 5%;
     width: 60%;
     border: 1px solid red;  
+  } */
+
+  .message-bubble {
+    width: 100%;
+    height: 5%;
+    border: 1px solid black;
   }

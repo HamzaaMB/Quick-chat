@@ -25,16 +25,14 @@ const Conversation = (data: any) => {
         </div>
         <div className="convo-detail-holder">
           <div className="convo-bubble-container">
-            <p className="left-bubble">
-              {data.data.map((x: any) => {
-                return <p>{x.message}</p>
+            {
+              data.data.map((x: any) => {
+                return <p className="message-bubble">{x.message}</p>
               })}
-            </p>
-            <p className="right-bubble">
-            {data.dataTwo.map((x: any) => {
-                return <p>{x.message}</p>
+            {
+              data.dataTwo.map((x: any) => {
+                return <p className="message-bubble">{x.message}</p>
               })}
-            </p>
           </div>
           <div className="convo-input-container">
             <input className="message-input" type="text"></input>

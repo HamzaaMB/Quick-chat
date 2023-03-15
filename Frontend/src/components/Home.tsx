@@ -15,7 +15,7 @@ const Home = () => {
     },
   {
     name: "Hamza",
-    message: "Bonjour, comment ca va?"
+    message: "ca va?"
   }
   ])
 
@@ -26,7 +26,7 @@ const Home = () => {
     },
     {
     name: "Issra",
-    message: "Bonjour, ca va! Et toi?"
+    message: "ca va! Et toi?"
     }
 ])
 
