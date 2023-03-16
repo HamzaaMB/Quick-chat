@@ -1,5 +1,3 @@
-
-
 /*Home Page*/
 
 .main-page {
@@ -7,102 +5,114 @@
   width: 80vw;
   border: 1px solid red;
   margin: auto;
-  }
+}
 
 .home-page {
   height: 100%;
   display: flex;
   flex-direction: row;
-  }
+}
 
-  .left-section-container {
-    height: 100%;
-    width: 30%;
-  }
+.left-section-container {
+  height: 100%;
+  width: 30%;
+}
 
 .left-section {
   height: 100%;
   width: 100%;
   background-color: rgb(206, 154, 85);
-  }
-  
-.right-section { 
+}
+
+.right-section {
   height: 100%;
   width: 70%;
-  background-color:rgb(91, 173, 194);
-  }
+  background-color: rgb(91, 173, 194);
+}
 
-  /*Profile Section*/
-  
-  .profile-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    height: 8%;
-  }
+/*Profile Section*/
 
-  /*Chat Popup*/
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  height: 8%;
+}
 
-  .chat-popup-unread,
-  .chat-popup-read {
-    height: 10%;
-    border: 1px solid black;
-  }
+/*Chat Popup*/
 
-  .chat-popup-unread:hover {
-    cursor: pointer;
-    background:rgb(223, 158, 74)
-  }
+.chat-popup-unread,
+.chat-popup-read {
+  height: 10%;
+  border: 1px solid black;
+}
 
-  .chat-popup-read {
-    cursor: pointer;
-    background-color: rgba(66, 66, 66, 0.445);
-  }
+.chat-popup-unread:hover {
+  cursor: pointer;
+  background: rgb(223, 158, 74)
+}
+
+.chat-popup-read {
+  cursor: pointer;
+  background-color: rgba(66, 66, 66, 0.445);
+}
 
 
-  /*Conversation*/
+/*Conversation*/
 
-  .right-convo-section {
-    height: 100%;
-    border: 1px solid black;
-  }
+.right-convo-section {
+  height: 100%;
+  border: 1px solid black;
+}
 
-  .convo-name-holder {
-    height: 10%;
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.convo-name-holder {
+  height: 10%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .convo-detail-holder {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .convo-bubble-container {
-    height: 90%;
-    background: gray;
-    display: flex;
-  }
+.convo-detail-holder {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
 
-  .convo-input-container {
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.convo-bubble-container {
+  height: 90%;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+}
 
-  .message-input {
-    width: 75%;
-    height: 40%;
-  }
+.convo-input-container {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .message-bubble {
-    width: 100%;
-    height: 5%;
-    border: 1px solid black;
-  }
+.message-input {
+  width: 75%;
+  height: 40%;
+}
+
+.left-message-bubble,
+.right-message-bubble {
+  width: 100%;
+  height: 5%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.left-message-bubble {
+  justify-content: flex-end;
+}
+
+.right-message-bubble {
+  justify-content: flex-start;
+}

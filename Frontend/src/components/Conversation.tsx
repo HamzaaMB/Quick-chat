@@ -27,7 +27,7 @@ const Conversation = (data: any) => {
           <div className="convo-bubble-container">
             {
               data.data.map((x: any) => {
-                return <p className="message-bubble">
+                return <p className="left-message-bubble">
                     <p className="left-conversation-bubble">
                       {x.message}
                     </p>
@@ -35,7 +35,7 @@ const Conversation = (data: any) => {
               })}
             {
               data.dataTwo.map((x: any) => {
-                return <p className="message-bubble">
+                return <p className="right-message-bubble">
                     <p className="left-conversation-bubble">
                       {x.message}
                     </p>
