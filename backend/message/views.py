@@ -13,22 +13,28 @@ class MessageView(APIView):
         serialized_messages = MessageSerializer(messages, many=True)
         return Response([
   {
+    "id": 1,
     "name": "hamza",
     "message": "hello"
   },
   {
+    "id": 2,
     "name": "hamza",
     "message": "how are you?"
   },
   {
-    "name": "hamza",
+    "id": 3,
+    "name":
+      "hamza",
     "message": "how is it going?"
   },
   {
+    "id": 4,
     "name": "hamza",
     "message": "what are you up to?"
   },
   {
+    "id": 5,
     "name": "hamza",
     "message": "testing to see if this works"
   }
