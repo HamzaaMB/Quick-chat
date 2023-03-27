@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Conversation from './Conversation';
 import Profile from './Profile'
 
@@ -6,6 +6,8 @@ import Profile from './Profile'
 const Home = () => {
   /*Changes css class from 'unread' to 'read' upon clicking the message in the left panel*/
   let [messageStatus, setMessageStatus] = useState('chat-popup-unread')
+  
+  let [renderConversation, setRenderConversation] = useState(false)
 
   /*Endpoint required for messages*/
   let [messages, setMessages] = useState([
@@ -31,7 +33,12 @@ const Home = () => {
     }
 ])
 
-  let [renderConversation, setRenderConversation] = useState(false)
+  useEffect(() => {
+    const getMessages = () => {
+      console.log('api call')
+    }
+
+  },[])
 
 
   const handleOnClick = (event: any) => {
